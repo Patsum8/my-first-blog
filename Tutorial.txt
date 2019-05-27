@@ -1,0 +1,48 @@
+D:\Projects\Python\djangogirls
+
+C:\Users\Name\djangogirls> activate myvenv
+
+(myvenv) ~/djangogirls$ python manage.py runserver
+
+git pull origin master
+
+In:
+python manage.py shell
+JEDES MAL!!!!!!!!!! in (myvenv): 
+from blog.models import Post)
+
+from django.contrib.auth.models import User
+me = User.objects.get(username='SpaceO')
+
+
+Post.objects.create(author=me, title='Sample title', text='Test')
+Post.objects.all()
+
+from django.utils import timezone
+Post.objects.filter(published_date__lte=timezone.now())
+
+post = Post.objects.get(title="Sample title")
+post.publish()
+
+Post.objects.filter(published_date__lte=timezone.now())
+Post.objects.order_by('created_date')      
+
+Django Shell verlassen: exit()
+
+Gehangen bei:
+venv
+github (README)
+irritierend: Manchmal werden vorhergehende Schritte nach den nachgehenden Schritten gezeigt (.z.B. import User in Django Shell)
+statt h1 -> h2 auf ... ziemlich weit oben:
+https://de-hub.gitbook.io/sys101/-Lau2EwzxdV4MVyJ4YJ7/extend_your_application
+irreführende Formulierung (indem wir es so schreiben: Post.objects.get(pk=pk) -> aber dieser Teil wird komplett nicht benötigt
+(eher im Konjunktiv formulieren: Könnten wir so schreiben, aber ... das würde zu einem Fehler führen.)
+
+
+Gut:
+Fragen vorweg nehmen und beantworten
+was wo eingegeben/eingetragen werden muss
+weiterführende Links
+Ermutigung zum Ausprobieren
+Erinnerung an Pausen
+Lob
